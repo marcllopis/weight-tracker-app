@@ -1,14 +1,17 @@
 import firebase from 'firebase/app';
 import 'firebase/auth';
 
+import { APICONFIG } from './api-config';
+
+
 // Firebase Config
 const config = {
-  apiKey: 'AIzaSyDQ_77Qj8E7gL8icH-yHgfWlG6VCL3j_34',
-  authDomain: 'weight-tracker-app-5f322.firebaseapp.com',
-  databaseURL: 'https://weight-tracker-app-5f322.firebaseio.com',
-  projectId: 'weight-tracker-app-5f322',
-  storageBucket: 'weight-tracker-app-5f322.appspot.com',
-  messagingSenderId: '554252733203',
+  apiKey: APICONFIG.apiKey,
+  authDomain: APICONFIG.authDomain,
+  databaseURL: APICONFIG.databaseURL,
+  projectId: APICONFIG.projectId,
+  storageBucket: APICONFIG.storageBucket,
+  messagingSenderId: APICONFIG.messagingSenderId,
 };
 
 // Initialize it if it is not already initialized
