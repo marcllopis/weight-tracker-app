@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import TestComponent from './app/test-component.jsx';
+import App from './components/App.jsx';
 
 
-ReactDOM.render(<TestComponent />, document.getElementById('root'));
+// eslint-disable-next-line no-undef
+ReactDOM.render(<App />, document.getElementById('root'));
