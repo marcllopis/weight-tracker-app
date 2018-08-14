@@ -9,11 +9,11 @@ export const doCreateUserWithEmailAndPassword = (email, password) => (
 export const doSignInWithEmailAndPassword = (email, password) => (
   auth.signInWithEmailAndPassword(email, password));
 
-  // To be used on future implementations
+// Sign out
+export const doSignOut = () => (
+  auth.signOut());
 
-// // Sign out
-// export const doSignOut = () => (
-//   auth.signOut());
+// To be used on future implementations
 
 // // Password Reset
 // export const doPasswordReset = email => (
