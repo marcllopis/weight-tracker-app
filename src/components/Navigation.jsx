@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { shape } from 'prop-types';
 
+import AuthUserContext from './AuthUserContext.jsx';
 import SignOutButton from './SignOut.jsx';
 import * as routes from '../constants/routes';
 
@@ -23,13 +24,13 @@ const NavigationNonAuth = () => (
   </ul>
 );
 
-const Navigation = ({ authUser }) => (
-  <div>
-    {authUser
+const Navigation = () => (
+  <AuthUserContext.Consumer>
+    {authUser => authUser
       ? <NavigationAuth />
       : <NavigationNonAuth />
     }
-  </div>
+  </AuthUserContext.Consumer>
 );
 
 Navigation.propTypes = {
